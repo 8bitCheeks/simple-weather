@@ -1,0 +1,13 @@
+role_guess,hex,rgb
+bg,#111828,17 24 40
+surface,#202938,32 41 56
+surface-2,#2E3745,46 55 69
+border-strong,#454E5B,69 78 91
+text,#FFFFFF,255 255 255
+text-2,#D0D3D9,208 211 217
+text-3,#99A0AB,153 160 171
+text-disabled,#6C7380,108 115 128
+accent,#1190D0,17 144 208
+accent-hover,#0F82BB,15 130 187
+accent-active,#0E73A6,14 115 166
+accent-warm,#EFC318,239 195 24

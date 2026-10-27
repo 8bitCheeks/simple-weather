@@ -1,0 +1,48 @@
+{
+	"name": "test-project",
+	"version": "1.0.0",
+	"description": "Test project for webpack template",
+	"main": "src/main.js",
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development webpack serve --hot --config config/webpack.config.js",
+		"build": "cross-env NODE_ENV=production webpack --config config/webpack.config.js",
+		"clean": "rm -rf dist",
+		"server": "node server.js",
+		"server:dev": "node --watch server.js",
+		"dev:all": "concurrently \"npm run server:dev\" \"npm run dev\"",
+		"start": "npm run dev"
+	},
+	"keywords": [
+		"webpack",
+		"tailwindcss",
+		"frontend"
+	],
+	"author": "Test Author",
+	"license": "MIT",
+	"devDependencies": {
+		"@svgr/webpack": "^8.1.0",
+		"@tailwindcss/postcss": "^4.1.11",
+		"autoprefixer": "^10.4.21",
+		"concurrently": "^10.0.5",
+		"copy-webpack-plugin": "^13.0.0",
+		"cross-env": "^10.1.0",
+		"css-loader": "^7.1.2",
+		"dotenv-webpack": "^8.1.1",
+		"html-webpack-plugin": "^5.6.3",
+		"postcss": "^8.5.6",
+		"postcss-loader": "^8.1.1",
+		"style-loader": "^4.0.0",
+		"tailwindcss": "^4.1.11",
+		"webpack": "^5.99.9",
+		"webpack-cli": "^6.0.1",
+		"webpack-dev-server": "^5.2.2"
+	},
+	"dependencies": {
+		"@bybas/weather-icons": "^2.0.0",
+		"@tabler/icons-webfont": "^3.36.0",
+		"cors": "^2.8.6",
+		"dotenv": "^17.4.2",
+		"express": "^5.2.1",
+		"mongoose": "^9.11.2"
+	}
+}
